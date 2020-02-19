@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.logo {
+  color: white;
+}
+
+.githubIcon {
+  position: absolute;
+  right: 25px; 
+  top: 15px
+}

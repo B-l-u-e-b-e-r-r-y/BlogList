@@ -96,21 +96,20 @@ class Collection extends Component {
     processData = (data) => {
         let posts = [];
         for (let i = 0; i < data.length; i++) {
-            for (let p = 0; p < data[i].blogList.length; p++) {
-                const name = data[i].name;
-                const title = data[i].blogList[p].title;
-                const blogurl = data[i].blogUrl;
-                const url = data[i].blogList[p].url;
-                const updateTime = data[i].updateTime;
+            const listLength = data[i].blogList.length - 1;
+            const name = data[i].name;
+            const title = data[i].blogList[listLength].title;
+            const blogurl = data[i].blogUrl;
+            const url = data[i].blogList[listLength].url;
+            const updateTime = data[i].updateTime;
 
-                posts.push({
-                    key: i + url,
-                    name: name,
-                    blogurl: blogurl,
-                    post: { title, url },
-                    updateTime: updateTime
-                });
-            }
+            posts.push({
+                key: i + url,
+                name: name,
+                blogurl: blogurl,
+                post: { title, url },
+                updateTime: updateTime
+            });
         }
 
         posts = posts.filter((item) => {

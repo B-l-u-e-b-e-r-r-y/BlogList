@@ -33,6 +33,7 @@ class App extends Component {
               collapsed={this.state.collapsed}
               onCollapse={this.onCollapse}
               theme='light'
+              breakpoint='xs'
               width={180}
               style={{ background: '#fff' }}>
               <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>

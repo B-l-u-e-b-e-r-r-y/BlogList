@@ -157,7 +157,7 @@ class Collection extends Component {
                         border: '1px solid rgba(0,0,0,0.08)',
                     }}
                     title='我的收藏'
-                    subTitle='顯示已收藏作者的當週文章'
+                    subTitle=''
                 />
                 <Table
                     columns={this.columns}

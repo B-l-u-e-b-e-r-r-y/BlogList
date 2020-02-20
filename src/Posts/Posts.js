@@ -107,7 +107,7 @@ class Posts extends Component {
                         border: '1px solid rgba(0,0,0,0.08)',
                     }}
                     title='所有文章'
-                    subTitle='文章依照更新時間由新到舊排序'
+                    subTitle=''
                 />
                 <Search
                     className='search'

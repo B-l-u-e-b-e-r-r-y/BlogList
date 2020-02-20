@@ -164,7 +164,7 @@ class Author extends Component {
                         border: '1px solid rgba(0,0,0,0.08)',
                     }}
                     title='所有作者'
-                    subTitle='按下作者左邊的 + 可查看作者的所有文章'
+                    subTitle=''
                 />
                 <Search
                     className='search'

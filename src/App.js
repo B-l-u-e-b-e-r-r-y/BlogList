@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Route, Link, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { Author, Posts, Collection } from './pages';
 import { Layout, Menu, Icon } from 'antd';
@@ -67,9 +66,11 @@ class App extends Component {
               {/* <Author /> */}
               {/* <Posts /> */}
               {/* <Collection /> */}
-              <Route path="/" exact component={Posts} />
-              <Route path="/author" component={Author} />
-              <Route path="/collection" component={Collection} />
+              <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <Route path="/" exact component={Posts} />
+                <Route path="/author" component={Author} />
+                <Route path="/collection" component={Collection} />
+              </BrowserRouter>
             </Content>
           </Layout>
         </Layout>

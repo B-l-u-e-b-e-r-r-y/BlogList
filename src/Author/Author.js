@@ -101,16 +101,21 @@ class Author extends Component {
             const name = data[i].name;
             const blogUrl = data[i].blogUrl;
             const key = name + blogUrl;
-            const isAdded = collects.filter((item) => {
-                return item === key;
-            });
 
-            if (isAdded.length > 0) {
-                data[i].collect = '取消收藏';
+            if (collects) {
+                const isAdded = collects.filter((item) => {
+                    return item === key;
+                });
+    
+                if (isAdded.length > 0) {
+                    data[i].collect = '取消收藏';
+                } else {
+                    data[i].collect = '收藏';
+                }
             } else {
                 data[i].collect = '收藏';
             }
-
+            
             data[i].key = i;
         }
 

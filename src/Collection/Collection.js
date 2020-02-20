@@ -68,7 +68,7 @@ class Collection extends Component {
         const year = time.getFullYear()
         let month = time.getMonth() + 1;
         let date = time.getDate();
-    
+
         return year + '-' + month + '-' + date + ' 00:00';
     }
 
@@ -119,21 +119,23 @@ class Collection extends Component {
         });
 
         const collects = JSON.parse(localStorage.getItem('collect'));
-        
-        const collection = [];
-        for (let p = 0; p < posts.length; p++) {
-            const pkey = posts[p].name + posts[p].blogurl;
-            for (let c = 0; c < collects.length; c++) {
-                const ckey = collects[c];
-                if (pkey === ckey) {
-                    collection.push(posts[p]);
+
+        if (collects) {
+            const collection = [];
+            for (let p = 0; p < posts.length; p++) {
+                const pkey = posts[p].name + posts[p].blogurl;
+                for (let c = 0; c < collects.length; c++) {
+                    const ckey = collects[c];
+                    if (pkey === ckey) {
+                        collection.push(posts[p]);
+                    }
                 }
             }
-        }
 
-        this.setState({
-            data: collection
-        });
+            this.setState({
+                data: collection
+            });
+        }
     }
 
     fetch = () => {

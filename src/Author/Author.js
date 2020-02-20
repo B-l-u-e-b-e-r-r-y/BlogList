@@ -86,7 +86,9 @@ class Author extends Component {
 
     filterAuthor = (author) => {
         const filtered = this.state.data.filter((item) => {
-            return item.name.indexOf(author) > -1;
+            if (item.name !== null) {
+                return item.name.indexOf(author) > -1;
+            }
         });
 
         this.setState({

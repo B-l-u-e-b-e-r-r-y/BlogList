@@ -64,9 +64,6 @@ class App extends Component {
                   minHeight: 280,
                 }}
               >
-                {/* <Author /> */}
-                {/* <Posts /> */}
-                {/* <Collection /> */}
                 <Route path="/" exact component={Posts} />
                 <Route path="/author" component={Author} />
                 <Route path="/collection" component={Collection} />

@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/B-l-u-e-b-e-r-r-y/BlogList/static/css/main.6216532c.chunk.css",
-    "main.js": "/B-l-u-e-b-e-r-r-y/BlogList/static/js/main.638329a2.chunk.js",
-    "main.js.map": "/B-l-u-e-b-e-r-r-y/BlogList/static/js/main.638329a2.chunk.js.map",
-    "runtime-main.js": "/B-l-u-e-b-e-r-r-y/BlogList/static/js/runtime-main.2c23dce3.js",
-    "runtime-main.js.map": "/B-l-u-e-b-e-r-r-y/BlogList/static/js/runtime-main.2c23dce3.js.map",
-    "static/css/2.9ddb28ea.chunk.css": "/B-l-u-e-b-e-r-r-y/BlogList/static/css/2.9ddb28ea.chunk.css",
-    "static/js/2.58298b55.chunk.js": "/B-l-u-e-b-e-r-r-y/BlogList/static/js/2.58298b55.chunk.js",
-    "static/js/2.58298b55.chunk.js.map": "/B-l-u-e-b-e-r-r-y/BlogList/static/js/2.58298b55.chunk.js.map",
-    "index.html": "/B-l-u-e-b-e-r-r-y/BlogList/index.html",
-    "precache-manifest.1aab6a9aff38d747b64da713455b2240.js": "/B-l-u-e-b-e-r-r-y/BlogList/precache-manifest.1aab6a9aff38d747b64da713455b2240.js",
-    "service-worker.js": "/B-l-u-e-b-e-r-r-y/BlogList/service-worker.js",
-    "static/css/2.9ddb28ea.chunk.css.map": "/B-l-u-e-b-e-r-r-y/BlogList/static/css/2.9ddb28ea.chunk.css.map",
-    "static/css/main.6216532c.chunk.css.map": "/B-l-u-e-b-e-r-r-y/BlogList/static/css/main.6216532c.chunk.css.map"
+    "main.css": "/BlogList/static/css/main.6216532c.chunk.css",
+    "main.js": "/BlogList/static/js/main.7369fbf4.chunk.js",
+    "main.js.map": "/BlogList/static/js/main.7369fbf4.chunk.js.map",
+    "runtime-main.js": "/BlogList/static/js/runtime-main.2ae1fd3f.js",
+    "runtime-main.js.map": "/BlogList/static/js/runtime-main.2ae1fd3f.js.map",
+    "static/css/2.9ddb28ea.chunk.css": "/BlogList/static/css/2.9ddb28ea.chunk.css",
+    "static/js/2.3b9bd271.chunk.js": "/BlogList/static/js/2.3b9bd271.chunk.js",
+    "static/js/2.3b9bd271.chunk.js.map": "/BlogList/static/js/2.3b9bd271.chunk.js.map",
+    "index.html": "/BlogList/index.html",
+    "precache-manifest.6ce8f09e4f5ca552074e8b3c6ee69b95.js": "/BlogList/precache-manifest.6ce8f09e4f5ca552074e8b3c6ee69b95.js",
+    "service-worker.js": "/BlogList/service-worker.js",
+    "static/css/2.9ddb28ea.chunk.css.map": "/BlogList/static/css/2.9ddb28ea.chunk.css.map",
+    "static/css/main.6216532c.chunk.css.map": "/BlogList/static/css/main.6216532c.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2c23dce3.js",
+    "static/js/runtime-main.2ae1fd3f.js",
     "static/css/2.9ddb28ea.chunk.css",
-    "static/js/2.58298b55.chunk.js",
+    "static/js/2.3b9bd271.chunk.js",
     "static/css/main.6216532c.chunk.css",
-    "static/js/main.638329a2.chunk.js"
+    "static/js/main.7369fbf4.chunk.js"
   ]
 }

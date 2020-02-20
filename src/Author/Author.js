@@ -62,6 +62,25 @@ class Author extends Component {
         localStorage.setItem('collect', JSON.stringify(otherCollect));
     }
 
+    reload = (key, collect) => {
+        const index = this.state.data.findIndex((item) => {
+            const itemKey = item.name + item.blogUrl;
+            return itemKey === key;
+        });
+
+        let collectText;
+        if (collect) {
+            collectText = '收藏';
+        } else {
+            collectText = '取消收藏';
+        }
+
+        this.state.data[index].collect = collectText;
+        this.setState({
+            data: this.state.data
+        });
+    }
+
     collectAuthor = (post) => {
         const collects = [];
         const key = post.name + post.blogUrl;
@@ -70,7 +89,7 @@ class Author extends Component {
             const isAdded = this.isAuthorAdded(otherCollect, key);
             if (isAdded) {
                 this.deleteAuthor(key);
-                window.location.reload();
+                this.reload(key, true);
                 return;
             }
 
@@ -81,7 +100,7 @@ class Author extends Component {
 
         collects.push(key);
         localStorage.setItem('collect', JSON.stringify(collects));
-        window.location.reload();
+        this.reload(key, false);
     }
 
     filterAuthor = (author) => {
@@ -130,11 +149,6 @@ class Author extends Component {
         const api = 'https://raw.githubusercontent.com/hexschool/w3hexschool-API/master/data.json';
         new common().fetchData(api)
             .then((res) => {
-                // const data = JSON.parse(JSON.stringify(res));
-                // data.forEach((item, index) => item.key = index);
-                // this.setState({
-                //     data: data
-                // });
                 this.processData(res);
             })
             .catch((err) => {

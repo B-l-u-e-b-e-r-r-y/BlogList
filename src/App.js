@@ -36,22 +36,28 @@ class App extends Component {
             style={{ background: '#fff' }}>
             <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
               <Menu.Item key="1">
-                <Link to="/">
-                  <Icon type="file-text" />
-                  <span>所有文章</span>
-                </Link>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                  <Link to="/">
+                    <Icon type="file-text" />
+                    <span>所有文章</span>
+                  </Link>
+                </BrowserRouter>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/Author">
-                  <Icon type="user" />
-                  <span>所有作者</span>
-                </Link>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                  <Link to="/Author">
+                    <Icon type="user" />
+                    <span>所有作者</span>
+                  </Link>
+                </BrowserRouter>
               </Menu.Item>
               <Menu.Item key="9">
-                <Link to="/Collection">
-                  <Icon type="heart" />
-                  <span>我的收藏</span>
-                </Link>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                  <Link to="/Collection">
+                    <Icon type="heart" />
+                    <span>我的收藏</span>
+                  </Link>
+                </BrowserRouter>
               </Menu.Item>
             </Menu>
           </Sider>
@@ -66,7 +72,7 @@ class App extends Component {
               {/* <Author /> */}
               {/* <Posts /> */}
               {/* <Collection /> */}
-              <BrowserRouter basename='/BlogList'>
+              <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Route path="/" exact component={Posts} />
                 <Route path="/author" component={Author} />
                 <Route path="/collection" component={Collection} />

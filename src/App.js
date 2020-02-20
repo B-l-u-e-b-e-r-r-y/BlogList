@@ -36,28 +36,22 @@ class App extends Component {
             style={{ background: '#fff' }}>
             <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
               <Menu.Item key="1">
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
-                  <Link to="/">
-                    <Icon type="file-text" />
-                    <span>所有文章</span>
-                  </Link>
-                </BrowserRouter>
+                <Link to="/">
+                  <Icon type="file-text" />
+                  <span>所有文章</span>
+                </Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
-                  <Link to="/Author">
-                    <Icon type="user" />
-                    <span>所有作者</span>
-                  </Link>
-                </BrowserRouter>
+                <Link to="/Author">
+                  <Icon type="user" />
+                  <span>所有作者</span>
+                </Link>
               </Menu.Item>
               <Menu.Item key="9">
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
-                  <Link to="/Collection">
-                    <Icon type="heart" />
-                    <span>我的收藏</span>
-                  </Link>
-                </BrowserRouter>
+                <Link to="/Collection">
+                  <Icon type="heart" />
+                  <span>我的收藏</span>
+                </Link>
               </Menu.Item>
             </Menu>
           </Sider>

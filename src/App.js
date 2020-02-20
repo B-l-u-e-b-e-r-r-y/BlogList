@@ -66,7 +66,7 @@ class App extends Component {
               {/* <Author /> */}
               {/* <Posts /> */}
               {/* <Collection /> */}
-              <BrowserRouter basename='https://b-l-u-e-b-e-r-r-y.github.io/BlogList/'>
+              <BrowserRouter basename='/BlogList'>
                 <Route path="/" exact component={Posts} />
                 <Route path="/author" component={Author} />
                 <Route path="/collection" component={Collection} />
